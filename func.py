@@ -47,7 +47,7 @@ def logRandom(max, logNum) -> int:
 
 
 def main():
-    random_numbers = [logRandom(10000, 5) for _ in range(100000)]
+    random_numbers = [logRandom(100, 5) for _ in range(1000)]
 
     plt.figure(figsize=(10, 6))
     sns.histplot(random_numbers, bins=1000, kde=True)
